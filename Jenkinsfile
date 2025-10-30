@@ -13,7 +13,7 @@ pipeline {
             }
         }
 
-        stage("Unit test") {git
+        stage("Unit test") {
             steps {
                 sh "./gradlew test"
             }
