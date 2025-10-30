@@ -2,19 +2,19 @@ pipeline {
     agent any
     stages {
         stage("Compile") {
-            step {
+            steps {
                 sh "./gradlew compileJava"
             }
         }
 
         stage("Build") {
-            step {
+            steps {
                 sh "./gradlew build"
             }
         }
 
-        stage("Unit test") {
-            step {
+        stage("Unit test") {git
+            steps {
                 sh "./gradlew test"
             }
         }
